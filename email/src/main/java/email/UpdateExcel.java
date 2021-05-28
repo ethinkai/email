@@ -17,6 +17,9 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class UpdateExcel {
 	public static String updateMsg_br = MailLastRelease.updateMsg_br;
 	public static String updateMsg_nr = MailLastRelease.updateMsg_nr;
+	//2021-3-22修改监理日报格式，添加备注
+	public static String updateMsg_nr_beizhu = MailLastRelease.updateMsg_nr_beizhu;
+	
 	public static void main(String[] args) throws Exception, IOException {
 		//获取当前日期
 		Calendar rightNow = Calendar.getInstance();
@@ -34,6 +37,10 @@ public class UpdateExcel {
 		int cell2 = 2;
 		new UpdateExcel().update(fileInput1, row1, cell1, fileOutput1, updateMsg_nr);
 		new UpdateExcel().update(fileInput2, row2, cell2, fileOutput2, updateMsg_nr);
+		//2021-3-22修改监理日报格式，添加备注
+		int row3 = 1;
+		int cell3 = 4;
+		new UpdateExcel().update(fileInput2, row3, cell3, fileOutput2, updateMsg_nr_beizhu);
 	}
 	
 	

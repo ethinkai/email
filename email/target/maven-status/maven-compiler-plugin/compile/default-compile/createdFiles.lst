@@ -1,4 +1,12 @@
-email\sendEmail.class
-email\sendMailUtils.class
-email\updateExcel.class
-email\readExcel.class
+email\MailLastRelease.class
+email\ExcelMainIflytek.class
+email\thread_Iflytek.class
+email\DateUtils.class
+email\ExcelUpdateMain.class
+email\SendEmail.class
+email\thread_Jianli.class
+email\ReadExcel.class
+email\thread_Excel.class
+email\ExcelMainJianli.class
+email\SendEmailUtils.class
+email\UpdateExcel.class

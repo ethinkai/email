@@ -28,7 +28,7 @@ public class ExcelMainIflytek {
 			//获取文件名称用于邮件主题
 			String subject_iflytek = SendEmailUtils.getFileName(filePath_iflytek);
 			//发送人和抄送人
-			String toEmail_iflytek = "yongzhang12@iflytek.com,sszhang@iflytek.com,szwu@iflytek.com";
+			String toEmail_iflytek = "yongzhang28@iflytek.com,sszhang@iflytek.com,szwu@iflytek.com";
 			String toCopy_iflytek = "ah_area_zfbg@iflytek.com";
 //			String toEmail_iflytek = "839249940@qq.com";
 //			String toCopy_iflytek = "yuzhiwang1024@163.com";

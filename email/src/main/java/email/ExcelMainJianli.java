@@ -10,10 +10,12 @@ public class ExcelMainJianli {
 	public static void main(String[] args) {
 		try {
 			String tdMsg = MailLastRelease.updateMsg_br;
+			//2021-3-22修改监理日报格式，添加备注
+			String tdMsg_beizhu = MailLastRelease.updateMsg_br_beizhu;
 			//邮件正文table表格内容
 			String emailContent_jianli = "<table width=\"100%\" border=\"1\" cellpadding=\"1\"><tr align=\"center\"><td>单位名称</td><td>服务事项</td><td>办理结果</td>\r\n" + 
 					"<td>人员请销假情况</td><td>备注</td></tr><tr><td align=\"center\">科大讯飞</td><td align=\"center\">1、智能庭审系统；<br>\r\n" + 
-					"2、智能语音助手；<br>3、智能会议系统；<br>4、智能编目系统；</td><td>" + tdMsg + "</td><td></td><td></td></tr></table>";
+					"2、智能语音助手；<br>3、智能会议系统；<br>4、智能编目系统；</td><td>" + tdMsg + "</td><td></td><td>" + tdMsg_beizhu + "</td></tr></table>";
 			Calendar rightNow = Calendar.getInstance();
 			Integer year = rightNow.get(Calendar.YEAR);
 			Integer month = rightNow.get(Calendar.MONTH) + 1;
