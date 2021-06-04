@@ -40,7 +40,9 @@ public class UpdateExcel {
 		//2021-3-22修改监理日报格式，添加备注
 		int row3 = 1;
 		int cell3 = 4;
-		new UpdateExcel().update(fileInput2, row3, cell3, fileOutput2, updateMsg_nr_beizhu);
+		//2021-6-4修改前一次更新被覆盖问题
+		String fileInput3 = fileOutput2 ;
+		new UpdateExcel().update(fileInput3, row3, cell3, fileOutput2, updateMsg_nr_beizhu);
 	}
 	
 	
